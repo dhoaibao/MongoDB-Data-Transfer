@@ -7,7 +7,11 @@
      mongodump --uri="<connection_string_of_first_mongod>/<dbname>"
      mongorestore --uri="<connection_string_of_second_mongod>" ./dump/
    
-     #to restore from a dump directory to a local mongod instance running on port 27017
+     # local_uri: mongodb://localhost:27017/
+   
+     # to create a copy from a local mongod instance running on port 27017
+     mongodump --db=<dbname>
+     # to restore from a dump directory to a local mongod instance running on port 27017
      mongorestore  dump/
    ```
 4. [The MongoDB Database Tools Documentation](https://www.mongodb.com/docs/database-tools/)
