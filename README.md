@@ -9,7 +9,7 @@
    
      # local_uri: mongodb://localhost:27017/
    
-     # to create a copy from a local mongod instance running on port 27017
+     # to creates a binary export of the contents from a local mongodb instance running on port 27017
      mongodump --db=<dbname>
      # to restore from a dump directory to a local mongod instance running on port 27017
      mongorestore  dump/
